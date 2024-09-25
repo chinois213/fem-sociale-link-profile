@@ -1,0 +1,102 @@
+/* browser Reset*/
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+@font-face {
+    font-family: "Inter";
+    src: url('./fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+/*  CSS custom properties */
+:root{
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey700: hsl(0, 0%, 20%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey900: hsl(0, 0%, 8%);
+
+  --fs-base: 14px;
+  --fs-large: 25px;
+
+}
+
+body{
+    font-size: var(--fs-base);
+    font-family: "Inter" , sans-serif;
+}
+
+ main{
+    background-color: var(--grey900);
+    min-height: 100vh;
+
+
+     /* centralize section  */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding:   25px;
+
+
+ }
+
+ section{
+    min-height: fit-content;
+    width: 400px;
+    background-color: var(--grey800);
+    border-radius: 15px;
+    padding: 25px;
+
+
+
+    /* centralize items in the section*/
+    text-align: center;
+ }
+
+ section > img{
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+ }
+
+ section > h1{
+    color: var(--white);
+    font-size: var(--fs-large);
+    margin-bottom: 10px;
+    font-weight: 700;
+ }
+
+ section > .location{
+ color: var(--green);
+ margin-bottom: 20px;
+ font-weight: 600;
+ }
+
+ section > .quote{
+    color: var(--white);
+    margin-bottom: 22px;
+ }  
+
+ .Social-links > a {
+    display: block;
+    background-color:var(--grey700) ;
+    padding: 20px;
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+
+     /* transition for hover*/
+ transition: all 350ms ease-in-out;
+ }
+
+.Social-links > a:hover{
+  background-color: var(--green);
+  color: var(--grey800);
+}
